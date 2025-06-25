@@ -16,7 +16,7 @@ const Mapa = () => {
                 />
                 <button className={style.btn}>Buscar</button>
             </form>
-              <img src="./../../assets/mapa.png" alt="mapa" />
+              <img src="./../../assets/mapa1.png" alt="mapa" />
         </div> 
     </>
   );
