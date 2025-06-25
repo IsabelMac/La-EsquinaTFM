@@ -5,7 +5,7 @@ import Login from './Pages/Login/indexlogin.jsx';
 import Register from './Pages/Register/indexregister.jsx';
 import ListaCategoria from './Pages/Categorias/listacategoria.jsx';
 import ProductosPorCategoria from './Pages/Categorias/productosxcategoria.jsx';
-import SearchResults from './Pages/Categorias/SearchResults.jsx';
+import SearchResults from './Pages/Categorias/searchresults.jsx';
 import Map from './Pages/Categorias/map.jsx';
 import CrearProducto from './Pages/Categorias/crearproducto.jsx';
 import './App.css';
