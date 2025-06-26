@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import style from './../Categorias/categorias.module.css';
 import Header from './header'; 
+import mapa from './../../assets/mapa.svg';
 
 const Mapa = () => {
   return (
@@ -16,7 +17,7 @@ const Mapa = () => {
                 />
                 <button className={style.btn}>Buscar</button>
             </form>
-              <img src="./../../assets/mapa1.png" alt="mapa" />
+              <img src={mapa} alt="mapa" />
         </div> 
     </>
   );
