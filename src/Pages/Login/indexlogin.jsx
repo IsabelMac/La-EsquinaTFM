@@ -3,6 +3,7 @@ import style from './login.module.css';
 import { Link } from 'react-router-dom';
 import Header from './../Categorias/header'; 
 import Footer from './../Categorias/footer';
+import LogoLE from './../../assets/laesquinalogo.svg';
 
 
 function Login() {
@@ -43,7 +44,7 @@ const handleSubmit = async (e) => {
         <Header/> 
         <div className={style.forms}>
             <div>
-                <img src="src/assets/laesquinalogo.svg" alt="logo La Esquina"/>
+                <img src={LogoLE} alt="logo La Esquina"/>
                 <div className={style.container}>
                     <p> ¡Bienvenido!</p>
                     <form className={style.form} onSubmit={handleSubmit}>

@@ -3,6 +3,8 @@ import style from './register.module.css';
 import {Link} from "react-router-dom";
 import Header from './../Categorias/header'; 
 import Footer from './../Categorias/footer';
+import LogoLE from './../../assets/laesquinalogo.svg';
+
 function Register() {
     const [formData, setFormData] = useState({
         nombre: '',
@@ -48,7 +50,7 @@ function Register() {
    <Header/> 
         <div className={style.forms}>
             <div>
-            <img src="./../../assets/laesquinalogo.svg" alt="logo La Esquina"/><div/>
+            <img src={LogoLE} alt="logo La Esquina"/><div/>
             <div className={style.container}>
                 <p> ¡Crea tu cuenta!</p>
                 <div className={style.row}></div>
