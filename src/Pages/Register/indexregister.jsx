@@ -48,7 +48,7 @@ function Register() {
    <Header/> 
         <div className={style.forms}>
             <div>
-            <img src="src/assets/laesquinalogo.svg" alt="logo La Esquina"/><div/>
+            <img src="./../../assets/laesquinalogo.svg" alt="logo La Esquina"/><div/>
             <div className={style.container}>
                 <p> ¡Crea tu cuenta!</p>
                 <div className={style.row}></div>

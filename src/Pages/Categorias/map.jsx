@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import style from './../Categorias/categorias.module.css';
 import Header from './header'; 
-import mapa from './../../assets/mapa.svg';
+import mapa from './../../assets/mapa.png';
 
 const Mapa = () => {
   return (
