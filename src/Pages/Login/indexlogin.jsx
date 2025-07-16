@@ -30,7 +30,7 @@ const handleSubmit = async (e) => {
     if (usuario) {
       localStorage.setItem('user', JSON.stringify(usuario));
       alert('¡Bienvenido, ' + usuario.email + '!');
-      window.location.href = '/crearproducto'; // o redirigir con useNavigate()
+      window.location.href = '/crearproducto'; 
     } else {
       alert('Email o contraseña incorrectos');
     }
@@ -57,6 +57,7 @@ const handleSubmit = async (e) => {
                                 required
                                 value={formData.email}
                                 onChange={handleChange}
+                                placeholder='administrador@laesquina.com'
                             />
                         </div>
                         <div>
@@ -68,6 +69,7 @@ const handleSubmit = async (e) => {
                                 required
                                 value={formData.password}
                                 onChange={handleChange}
+                                placeholder='123'
                             />
                         </div>
                         <button className={style.btn} type="submit">Ingresar</button>
