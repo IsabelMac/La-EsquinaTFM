@@ -21,8 +21,6 @@ p{
     border: 1px solid #c5c5c5;
 }
 
-
-
 span{
     font-size:10pt;
 }
@@ -48,6 +46,11 @@ label{
     border: none;
     padding: 8px;
     font-size: 14px;  
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color:#73a52c ;
 }
 
 .forms {

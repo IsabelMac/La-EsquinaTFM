@@ -6,7 +6,7 @@
 p{
     text-align: center;
     color: #575756;
-    margin: 0px 0px 15px 0px;
+    margin: 0px 0px 8px 0px;
     padding: 2px;
     font-size: 1em;
     font-weight: 500;
@@ -32,14 +32,15 @@ span{
 }
 
 
-a{
+.login{
     color: #607130 ;
 }
-a :hover{
-    color:#ffffff;
+.login :hover{
+    color:#020101;
     font-size:16pt;
 
 }
+
 
 label{
     font-size: 10pt;
@@ -62,7 +63,11 @@ label{
     border: none;
     padding: 8px;
     font-size: 14px;
-    
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color:#73a52c ;
 }
 
 .forms {

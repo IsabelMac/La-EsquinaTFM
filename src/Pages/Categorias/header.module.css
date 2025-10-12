@@ -1,12 +1,36 @@
+/*para cambiar informacion del header*/
+
 header{
+  position: sticky; /*para que header sea estatico*/
+  top: 0px;
   background-color: #212529;
   color: #575756;
-    margin: 0px;
-    padding: 2px;
-    font-size: 1em;
-    font-weight: 500;
+  margin: 0px;
+  padding: 2px;
+  font-size: 1em;
+  font-weight: 500;
+  z-index: 1000; 
 }
+/*logo supermercado en header*/
 .logob{
   height: 50px;
   margin: 10px;
 }
+
+
+
+
+.iconNav {
+  color: white;
+  margin-right: 1em;
+  transition: 0.3s ease;
+}
+
+.iconNav:hover {
+  color: #81B932; /* tono dorado al pasar el mouse */
+}
+
+.iconActivo {
+  color: #81B932;       /* color activo */
+  transform: scale(1.1); /* leve aumento */
+  filter: drop-shadow(0 0 5px #81B932);}

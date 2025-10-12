@@ -34,12 +34,20 @@ const [error, setError] = useState(null);
           name="query"
           placeholder="Ingrese el nombre del producto"
         />
+        <div className={style.centrarMapa}>
+          
         <button className={style.btn}>Buscar</button>
+        <button className={style.btnmap}><Link to="/map">Mapa</Link></button>
+</div>
+
+
+
+
       </form>
     {cargando && <p>Cargando categorías...</p>}
     {error && <p className={style.error}>{error}</p>}
       <div className="container mt-4">
-        <div className="row g-4">{categorias.map((categorias) => (
+        <div className="row g-4" >{categorias.map((categorias) => (
           <div key={categorias.id} className="col-md-3">
             <Link to={`/categoria/${categorias.id}`}>
               <div className={style.tarjeta}>

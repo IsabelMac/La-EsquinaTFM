@@ -5,18 +5,52 @@
   display: grid;
   justify-items: center; margin: 0 auto;
   width: 50%;
+  place-items: center;
+  z-index: 1;  
+  position: relative;
+  
 }
 
 @media (max-width: 1200px) {
   .contenedortarjetas {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    display: grid;
+    justify-items: center; margin: 0 auto;
     width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .contenedortarjetas {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+    display: grid;
+    justify-items: center; margin: 0 auto;
+    width: 80%;
   }
 }
 
 @media (max-width: 768px) {
   .contenedortarjetas {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 15px;
+    display: grid;
+    justify-items: center; margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contenedortarjetas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 15px;
+    display: grid;
+    justify-items: center; margin: 0 auto;
     width: 80%;
   }
 }
@@ -29,7 +63,7 @@
 }
 
 .tarjeta {
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 15px;
   text-align: center;
   width: 200px;
@@ -37,8 +71,10 @@
   background-color: #81b932; 
   color: white; 
   position: relative;
+  box-shadow: 2px 2px 2px rgb(179, 178, 178);
 }
 
+/*imagenes de categorias con fondo de agua*/
 .tarjeta img{
   width: 50%;
   position: absolute;
@@ -46,7 +82,7 @@
   left:50%;
   transform: translate(-50%,-50%);
 }
-
+/*texto de categorias en pagina principal*/
 .tarjeta p{
   color:#fff;
   font-size: 20px;
@@ -56,6 +92,11 @@
   transform: translate(-50%,-50%);
 }
 
+
+.row-g4{
+background-color: #ea522c;
+}
+
 .categorias {
   display: flex;
   place-items: center;
@@ -63,6 +104,7 @@
   min-height: 80vh;
   flex-direction: column;
   justify-content: center;
+  color: white; 
 }
 .buscador{
   display: flex;
@@ -72,9 +114,9 @@
 }
 .textoin{
   flex: 1;
-  border-radius: 3px 0px 0px 3px;
   height: 39px;
   border: 1px solid #c5c5c5;
+  border-radius: 6px;
   background: #f6f6f6;
   color: #454545;
   padding: 0 10px;
@@ -84,20 +126,44 @@
   color: #fff;
   height: 39px;
   background-color: #81b932;
-  border-radius: 0px 3px 3px 0px;
+  border-radius: 6px;
   border: none;
   padding: 0 15px;
+  margin-left: 15px;
   font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }    
 
+.btn:hover {
+  background-color:#73a52c ;
+}
+
+.btnmap{
+  color: #fff;
+  height: 39px;
+  background-color: #81b932;
+  border-radius: 6px;
+  border: none;
+  padding: 0 15px;
+  margin-left: 15px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btnmap:hover {
+  background-color:#73a52c ;
+}
+
 footer {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
-  background-color: #222;
+  background-color: #212529;
   color: white;
   text-align: center;
   padding: 1rem;
+  margin-top: 2em;
 }
 
 .titcateg{
@@ -125,29 +191,44 @@ img .imgtam{
   text-align: center;
 }
 
-.nombrep{
- text-align: center;
-}
+
 
 .contenedor {
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 12px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
-  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
 }
 
 .columnaImagen {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 .columnaTexto {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
-
+.nombrep {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+}
 .imgtam {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  max-width: 250px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 button {
@@ -163,7 +244,7 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: #030303;
 }
 
 button:focus,
@@ -173,4 +254,32 @@ button:focus-visible {
 
 .mapaimagen{
   width: 40%;;
+}
+
+.popupContenido {
+  padding: 20px;
+  border-radius: 6px;
+  position: relative;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(0,0,0,0.176);
+  max-width: auto;
+  margin: auto;
+}
+
+.centrarMapa {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0px;
+  gap: 10px;
+
+}
+
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #81B932;
 }

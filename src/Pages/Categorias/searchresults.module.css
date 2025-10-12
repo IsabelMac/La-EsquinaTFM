@@ -1,0 +1,84 @@
+.buscador {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  gap: 10px;
+}
+
+.textoin {
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #81B932;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color:#73a52c ;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card {
+  cursor: pointer;
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.hr {
+  border: none;
+  border-top: 2px solid #eee;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 6px solid #81B932;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.columnaImagen {
+  flex: 1;
+  text-align: center;
+}
+
+.imgtam {
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+.columnaTexto {
+  flex: 2;
+}
+
+.nombrep {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.centrarMapa {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0px;
+  gap: 10px;
+
+}
