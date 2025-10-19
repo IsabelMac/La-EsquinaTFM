@@ -135,12 +135,13 @@ background-color: #ea522c;
   transition: background-color 0.3s ease;
 }    
 
+
 .btn:hover {
   background-color:#73a52c ;
 }
 
 .btnmap{
-  color: #fff;
+  color: #757575;
   height: 39px;
   background-color: #81b932;
   border-radius: 6px;
@@ -152,7 +153,8 @@ background-color: #ea522c;
 }
 
 .btnmap:hover {
-  background-color:#73a52c ;
+  background-color:#81B932 ;
+  border-bottom: #81B932;
 }
 
 footer {

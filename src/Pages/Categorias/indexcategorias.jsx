@@ -35,9 +35,8 @@ const [error, setError] = useState(null);
           placeholder="Ingrese el nombre del producto"
         />
         <div className={style.centrarMapa}>
-          
         <button className={style.btn}>Buscar</button>
-        <button className={style.btnmap}><Link to="/map">Mapa</Link></button>
+        <button className={style.btn}><Link to="/map">Mapa</Link></button>
 </div>
 
 
